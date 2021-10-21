@@ -1,0 +1,53 @@
+/*ID*/
+.principal-characters-container{
+  background-color:black;
+  min-height: 20rem;
+  max-height: 25rem;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+
+/*CLASES*/
+.center-items{
+  text-align: -webkit-center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 1em;
+}
+
+.character-container{
+  margin-top: 2rem;
+  margin-bottom: -1rem;
+}
+
+.clear-both{
+  clear: both;
+}
+
+.carrousel-style{
+  text-align: center;
+  margin: 1rem 0.5rem;
+  height: 20rem;
+  min-height: 15rem;
+  max-height: 20rem;
+}
+.carrousel-cell{
+  width: 10rem !important;
+}
+
+.container-extra-characters{
+  float: left;
+  width: 15%;
+  margin: 1.25rem 0.175rem;
+}
+
+.container-extra-characters-list{
+  height: fit-content;
+  margin: 2rem 1rem 0rem 5rem;
+}
+

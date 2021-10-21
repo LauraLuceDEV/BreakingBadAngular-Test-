@@ -1,0 +1,22 @@
+#character-data-container{
+  display: flex;
+  margin: 2rem auto;
+  width: 90%;
+  max-height: 60%;
+  min-height: 60%;
+  background: #333333;
+  color:#fff;
+  padding: 10px;
+}
+
+
+.img-container{
+  max-width: 75%;
+  min-width: 20%;
+}
+
+
+.profile-img{
+  max-width: 60%;
+  min-width: 20%;
+}

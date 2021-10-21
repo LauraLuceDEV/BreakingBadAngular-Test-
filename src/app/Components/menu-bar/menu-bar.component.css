@@ -1,0 +1,45 @@
+.bg-black{
+  background-color: #000;
+}
+
+.img-menu{
+  width:50%;
+  height: 12rem;
+}
+
+.img-style{
+  min-height: 7rem;
+  max-height: 10rem;
+  max-width: 45%;
+  min-width: 30%;
+  padding: 0.5rem;
+}
+
+.flag-style{
+  width: 5%;
+  margin: 0.5rem;
+  float: right;
+}
+
+
+#bar{
+  clear: both;
+  width: 100%;
+  height: 0rem;
+  border-bottom-style: solid;
+
+}
+
+#select-languaje{
+  width:50%;
+  display: table-header-group;
+  z-index: 9999999999999;
+  position: sticky;
+  top: 17%;
+  right: 0%;
+}
+
+
+div{
+  width:100%;
+}

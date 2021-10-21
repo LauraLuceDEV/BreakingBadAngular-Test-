@@ -1,0 +1,83 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+  background-color: #ffda00cf;
+  margin: 0 !important;
+}
+
+/*Font - Classes*/
+.monserrat{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*Global - Clases*/
+
+.bg-black{
+  background-color: #000;
+}
+
+.yellow-filter{
+  filter: invert(69%) sepia(95%) saturate(554%) hue-rotate(1deg) brightness(105%) contrast(106%);}
+
+
+.color-yellow{
+  color: #ffda00cf;
+}
+
+.display-in-line-table{
+  display: inline-table;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.wk-left{
+  text-align: -webkit-left;
+}
+
+.left{
+  float: left;
+}
+
+.wd-45{
+  width: 45%;
+}
+.wd-100{
+  width: 100%;
+}
+
+.mg-top-2rem{
+  margin: top 2rem !important;
+}
+
+.mg-bottom-2rem{
+  margin-bottom: 2rem !important;
+}
+
+.mg-left-1rem{
+  margin-left: 1rem;
+}
+
+.pd-1rem{
+  padding: 1rem !important;
+}
+
+.clear-both{
+  clear: both;
+}
+
+.remove-all-styles {
+  width: remove;
+}
+
+.u-clearfix:after,
+.u-clearfix:before {
+  content: '';
+  display: table;
+}
+.u-clearfix:after {
+  clear: both;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

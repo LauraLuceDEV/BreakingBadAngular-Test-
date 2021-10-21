@@ -1,0 +1,56 @@
+/*HOVER*/
+.character-listing {
+  position: relative;
+  width: 13rem;
+}
+
+.character-image {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.character-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+}
+
+.character-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  background: rgba(0, 0, 0, 0.521);
+  color: white;
+
+  /* position the text in t’ middle*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.character-listing:hover .character-title {
+  opacity: 1;
+}
+
+.character-listing:hover .character-image img {
+  filter: blur(2px);
+}
+
+
+/* for touch screen devices */
+@media (hover: none) {
+  .character-title {
+    opacity: 1;
+  }
+  .character-image img {
+    filter: blur(2px);
+  }
+}

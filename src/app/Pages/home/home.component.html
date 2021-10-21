@@ -1,0 +1,56 @@
+
+<div class="wd-100 mg-bottom-2rem">
+  <menu-bar></menu-bar>
+</div>
+
+  <!-- Listado de personajes-->
+  <div class="center-items clear-both">
+    <div class="mg-top-2rem">
+      <!--Carrousel de imágenes para los personajes principales-->
+      <div>
+        <h4 class="monserrat wk-left mg-left-1rem">MAIN CHARACTERS</h4>
+      </div>
+      <div class="principal-characters-container">
+        <carousel [height]="250" [cellWidth]="250" [cellsToShow]="6" [counter]='true' [dots]='true' class="carrousel-style">
+          <div class="carousel-cell" *ngFor="let c of mainCharacterList">
+            <!--Componente para visualizar a los personajes-->
+            <character-container class="character-container" [character]="c"></character-container>
+            <!--Componente para visualizar a los personajes-->
+          </div>
+        </carousel>
+      </div>
+    <!--// Carrousel de imágenes para los personajes principales-->
+      <!--Carrousel de imágenes para los personajes secundarios-->
+      <div>
+        <h4 class="monserrat wk-left mg-left-1rem">SECONDARY CHARACTERS</h4>
+      </div>
+      <div class="principal-characters-container">
+        <carousel [height]="250" [cellWidth]="250" [cellsToShow]="6" [counter]='true' [dots]='true' class="carrousel-style">
+          <div class="carousel-cell" *ngFor="let c of secondaryCharacterList">
+            <!--Componente para visualizar a los personajes-->
+            <character-container class="character-container" [character]="c"></character-container>
+            <!--Componente para visualizar a los personajes-->
+          </div>
+        </carousel>
+      </div>
+    <!--// Carrousel de imágenes para los personajes secundarios-->
+
+        <!--Personajes extras-->
+        <div class="bg-black display-in-line-table">
+          <h4 class="monserrat wk-left mg-left-1rem color-yellow">EXTRAS</h4>
+          <div class="mg-top-2rem container-extra-characters-list">
+            <div class="container-extra-characters"*ngFor="let c of characterList">
+              <character-container class="character-container" [character]="c"></character-container>
+            </div>
+          </div>
+        </div>
+      <!--Personajes extras-->
+    </div>
+  </div>
+  <!--// Listado de personajes-->
+
+  <!--Footer-->
+  <footer-component></footer-component>
+
+
+

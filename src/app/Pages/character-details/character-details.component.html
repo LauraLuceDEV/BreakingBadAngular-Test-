@@ -1,0 +1,90 @@
+<div id="character-data-container">
+  <div *ngIf="character else loading">
+    <!--Imágen-->
+    <div class="container img-container left wd-45">
+      <img src="{{character.img}}" alt="{{character.name}} - photo" class="profile-img"/>
+      <p>{{character.portrayed}}</p>
+    </div>
+
+    <!--Tabla de datos-->
+    <div class="container left wd-45">
+      <div class="row">
+        <h4>{{character.name}}</h4>
+      </div>
+    </div>
+    <div class="container left wd-45">
+      <div class="row">
+        <div class="col">
+          Name
+        </div>
+        <div class="col">
+          {{character.name}} {{character.portrayed}}
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          Nickname
+        </div>
+        <div class="col">
+          {{character.nickname}}
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          Birthday
+        </div>
+        <div class="col">
+          {{character.birthday}}
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          Ocupation
+        </div>
+        <div class="col">
+          {{character.occupation}}
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          Status
+        </div>
+        <div class="col">
+          {{character.status}}
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          Apperance
+        </div>
+        <div class="col">
+          {{character.appearance}}
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          Category
+        </div>
+        <div class="col">
+          {{character.category}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<ng-template #loading>
+  loading
+</ng-template>
+
+
+
+<!--componente footer-->
+<footer-component class="clear-both"></footer-component>

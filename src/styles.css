@@ -62,6 +62,13 @@ body{
   padding: 1rem !important;
 }
 
+.position-cero{
+  position: 0 !important;
+}
+
+.position-absolute{
+  position: absolute !important;
+}
 .clear-both{
   clear: both;
 }

@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
 import { BBCharacter } from 'src/app/Models/ICharacter';
 import { BreakingBadAPIService } from 'src/app/Services/breaking-bad-api.service';
+import { CustomizationService } from 'src/app/Services/customization.service';
 
 
 @Component({
@@ -13,19 +14,22 @@ import { BreakingBadAPIService } from 'src/app/Services/breaking-bad-api.service
 export class CharacterDetailsComponent implements OnInit, OnDestroy {
   characterID : number;
   character : BBCharacter;
+  positionFooter: string;
 
   //-------
   // CICLO DE VIDA
   //-------
 
   constructor(private actRoute: ActivatedRoute,
-    private bbService: BreakingBadAPIService) { }
+    private bbService: BreakingBadAPIService,
+    private customiServ: CustomizationService) { }
 
 
   ngOnInit(): void {
     this.characterID = Number(this.actRoute.snapshot.paramMap.get('id'));
+    this.customiServ.setFooterStyle('position-absolute');
+    this.positionFooter = this.customiServ.footerStyle;
     this.chargeData();
-    console.log(this.character)
   }
 
   ngOnDestroy(): void {}
